@@ -1,0 +1,33 @@
+{
+    "id": "731f0c3e-5ea0-4640-8aaa-4d363a67be10",
+    "started_at": "2026-10-21T21:22:24.279311",
+    "updated_at": "2026-10-21T21:25:41.535460",
+    "finished_at": "2026-10-21T21:25:41.535460",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "mini-swe-agent-local__gpt-5.6-luna__adhoc": {
+                "n_trials": 0,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {},
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": 599612,
+        "n_cache_tokens": 573135,
+        "n_output_tokens": 9216,
+        "cost_usd": 0.14407976
+    }
+}

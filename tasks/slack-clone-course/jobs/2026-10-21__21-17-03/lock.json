@@ -1,0 +1,65 @@
+{
+    "schema_version": 2,
+    "created_at": "2026-10-22T01:17:03.993901Z",
+    "harbor": {
+        "version": "0.20.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 4,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "ModelNotFoundError",
+            "RewardFileNotFoundError",
+            "AgentSafetyRefusalError",
+            "AgentTimeoutError",
+            "ApiUsageLimitError",
+            "VerifierTimeoutError",
+            "AgentAuthenticationError",
+            "VerifierOutputParseError",
+            "RewardFileEmptyError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 1,
+            "task": {
+                "name": "final_task",
+                "type": "local",
+                "digest": "sha256:748600a0085d8a1ea5ca3677938348120ce0e7199508fa99b238dd49c81d6c3c",
+                "path": "tasks/slack-clone-course/course-staff-files/final_task"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "mini_swe_agent_local:MiniSweAgentLocal",
+                "model_name": "openai/gpt-5.6-luna",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {
+                    "config_file": "/Users/rohit.ramesh/Desktop/Columbia/Courses/Advanced Software Dev with AI/course_milestone_1/tasks/slack-clone-course/course-staff-files/final_task/agent_llm_config/mswea-openai-gpt-5.6-luna-no-reasoning.yaml",
+                    "cost_limit": 3
+                },
+                "mcp_servers": []
+            },
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": true
+            }
+        }
+    ]
+}
